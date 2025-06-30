@@ -24,7 +24,7 @@ public class ListaCasos implements List <Caso> {
     }
 
     @Override
-    public Caso buscar(Caso t) {
+    public Caso buscar(Object t) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
