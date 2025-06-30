@@ -29,7 +29,7 @@ public class ListaVictima implements List <Victima> {
 
     @Override
     public Victima buscar(Object id) {
-        String idt = id.toString();
+        String idt = String.valueOf(id.hashCode());
         int max = listaVictimas.length;
         for (int i = 0; i < max; i++) {
             if (listaVictimas[i].getCedula().equalsIgnoreCase(idt)){
