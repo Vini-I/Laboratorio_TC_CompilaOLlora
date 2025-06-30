@@ -5,7 +5,7 @@
 package Casos;
 
 import java.time.LocalDate;
-import Personas.Victima;
+import Personas.Victima.Victima;
 
 /**
  *
