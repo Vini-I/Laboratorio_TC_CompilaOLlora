@@ -5,7 +5,7 @@
 package Casos;
 
 import java.time.LocalDate;
-import Personas.Victima;
+import Personas.Victima.Victima;
 
 /**
  *
@@ -24,7 +24,7 @@ public class Caso {
     }
 
     public Victima getVictima() {
-        return victima.id;
+        return victima;
     }
 
     public String getDescripcion() {
