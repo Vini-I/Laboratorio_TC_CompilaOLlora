@@ -35,7 +35,7 @@ public class ListaVictima implements List <Victima> {
             if (listaVictimas[i].getCedula().equalsIgnoreCase(idt)){
                 return listaVictimas[i];
             }
-        }
+        } 
         return null;
     }
     
