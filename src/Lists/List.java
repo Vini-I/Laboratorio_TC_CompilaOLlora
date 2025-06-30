@@ -14,5 +14,5 @@ public interface List <T>{
     
     public boolean eliminar(T t);
     
-    public T buscar(T t);
+    public T buscar(Object id);
 }
