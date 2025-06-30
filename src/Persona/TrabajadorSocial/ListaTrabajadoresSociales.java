@@ -4,12 +4,14 @@
  */
 package Persona.TrabajadorSocial;
 import Lists.List;
+import java.util.Arrays;
 /**
  *
  * @author llean
  */
 public class ListaTrabajadoresSociales implements List <TrabajadorSocial> {
     private TrabajadorSocial list[];
+    
 
     public ListaTrabajadoresSociales(int tamannio) {
         this.list = new TrabajadorSocial[tamannio];
@@ -47,6 +49,19 @@ public class ListaTrabajadoresSociales implements List <TrabajadorSocial> {
             }
         }
         return null;
+    }
+    
+    public String buscarCanton(String canton) {
+         int max = list.length;
+         int cont = 0;
+         TrabajadorSocial listCanton[] = new TrabajadorSocial[max];
+        for (int i = 0; i <max; i++) {
+            if(list[i].getCanton()==canton){
+                listCanton[cont] = list[i];
+                cont = cont+1;
+            }
+        }
+        return Arrays.toString(listCanton);
     }
 }
 
