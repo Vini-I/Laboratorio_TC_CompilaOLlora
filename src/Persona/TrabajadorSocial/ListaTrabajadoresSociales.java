@@ -41,10 +41,10 @@ public class ListaTrabajadoresSociales implements List <TrabajadorSocial> {
     }
     
     @Override
-    public TrabajadorSocial buscar(TrabajadorSocial t) {
+    public TrabajadorSocial buscar(Object cedula) {
            int max = list.length;
         for (int i = 0; i <max; i++) {
-            if(list[i].getCedula()==t.getCedula()){
+            if(list[i].getCedula() == cedula){
                 return list[i];
             }
         }
