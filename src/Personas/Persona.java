@@ -23,14 +23,6 @@ public abstract class Persona {
         return nombre;
     }
 
-    public String getCorreo() {
-        return correo;
-    }
-
-    public String getTelefono() {
-        return telefono;
-    }
-
     public void setCorreo(String correo) {
         this.correo = correo;
     }
