@@ -28,10 +28,11 @@ public class ListaVictima implements List <Victima> {
     }
 
     @Override
-    public Victima buscar(Victima t) {
+    public Victima buscar(Object id) {
+        String idt = id.toString();
         int max = listaVictimas.length;
         for (int i = 0; i < max; i++) {
-            if (listaVictimas[i].getCedula().equalsIgnoreCase(t.getCedula())){
+            if (listaVictimas[i].getCedula().equalsIgnoreCase(idt)){
                 return listaVictimas[i];
             }
         }
