@@ -4,7 +4,6 @@
  */
 package Persona.TrabajadorSocial;
 import Lists.List;
-import java.util.Arrays;
 /**
  *
  * @author llean
@@ -51,7 +50,7 @@ public class ListaTrabajadoresSociales implements List <TrabajadorSocial> {
         return null;
     }
     
-    public String buscarCanton(String canton) {
+    public TrabajadorSocial[] buscarCanton(String canton) {
          int max = list.length;
          int cont = 0;
          TrabajadorSocial listCanton[] = new TrabajadorSocial[max];
@@ -61,7 +60,7 @@ public class ListaTrabajadoresSociales implements List <TrabajadorSocial> {
                 cont = cont+1;
             }
         }
-        return Arrays.toString(listCanton);
+        return listCanton;
     }
 }
 
