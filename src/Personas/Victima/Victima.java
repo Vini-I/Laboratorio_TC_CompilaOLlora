@@ -26,12 +26,17 @@ public class Victima extends Persona {
         return genero;
     }
     
+    @Override
+    public String getNombre(){
+        return String.valueOf(super.getNombre().hashCode());
+    }
+    
     public int calcularEdad(LocalDate fechaNacimiento){
         return Period.between(fechaNacimiento, LocalDate.now()).getYears();
     }
 
     public Victima(String cedula, String nombre, String correo, String telefono, LocalDate fechaNacimiento, String genero, String direccion) {
-        super(Integer.toString(cedula.hashCode()), nombre, correo, telefono);
+        super(String.valueOf(cedula.hashCode()), nombre, correo, telefono);
         this.fechaNacimiento = fechaNacimiento;
         this.genero = genero;
         this.direccion = direccion;
